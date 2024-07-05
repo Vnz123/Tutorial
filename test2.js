@@ -1,17 +1,16 @@
-import express from express;
 
-
- const router=express.Router();
-
+const http= ('http');
+//import express from express;
 
 
 
-const app= express();
+//const app= express();
+
 const port=5000;
 
 
-app.get('/',(req,res)=> {
-    
+http.get('/',(req,res)=> {
+     console.log('file working');
     res.send('Hello from homepage.');
 });
-app.listen(port,()=> console.log(`Server running on port: http://localhost:${port}`));
+http.listen(port,()=> console.log(`Server running on port: http://localhost:${port }`));
